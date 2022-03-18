@@ -19,7 +19,7 @@ const Jumbotron = ({image, heading, subHeading}) => {
     <header>
       <MDBNavbar expand='lg' style={{backgroundColor: '#9575CD'}}>
       <MDBContainer fluid>
-        <MDBNavbarBrand href='#'><span className='header-link'>Lily's Beauty Lounge</span></MDBNavbarBrand>
+        <MDBNavbarBrand href='/'><span className='header-link'>Lily's Beauty Lounge</span></MDBNavbarBrand>
         <MDBNavbarToggler
           type='button'
           data-target='#navbarColor02'
@@ -33,15 +33,15 @@ const Jumbotron = ({image, heading, subHeading}) => {
         <MDBCollapse show={showNavColor} navbar>
           <MDBNavbarNav className='me-auto mb-2 mb-lg-0'>
             <MDBNavbarItem className='active'>
-              <MDBNavbarLink aria-current='page' href='#'>
+              <MDBNavbarLink aria-current='page' href='/'>
                 <span className='header-link'>Home</span>
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href='#'><span className='header-link'>Contact</span></MDBNavbarLink>
+              <MDBNavbarLink href='/contact'><span className='header-link'>Contact</span></MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href='#'><span className='header-link'>Gallery</span></MDBNavbarLink>
+              <MDBNavbarLink href='/gallery'><span className='header-link'>Gallery</span></MDBNavbarLink>
             </MDBNavbarItem>
           </MDBNavbarNav>
         </MDBCollapse>
