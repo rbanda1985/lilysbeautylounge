@@ -13,13 +13,13 @@ import {
 } from 'mdb-react-ui-kit';
 
 
-const Jumbotron = ({image, heading, subHeading}) => {
+const Jumbotron = ({image, heading, subHeading, logo}) => {
   const [showNavColor, setShowNavColor] = useState(false);
   return (
     <header>
-      <MDBNavbar expand='lg' style={{backgroundColor: '#9575CD'}}>
+      <MDBNavbar expand='lg' style={{backgroundColor: 'white'}}>
       <MDBContainer fluid>
-        <MDBNavbarBrand href='/'><span className='header-link'>Lily's Beauty Lounge</span></MDBNavbarBrand>
+        <MDBNavbarBrand href='/'><img className='logo' src={logo} alt='logo'></img></MDBNavbarBrand>
         <MDBNavbarToggler
           type='button'
           data-target='#navbarColor02'
