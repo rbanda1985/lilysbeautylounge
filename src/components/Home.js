@@ -1,10 +1,12 @@
 import React from 'react'
+import './Home.css'
 import Jumbotron from './Jumbotron'
 import logo from '../assets/logo.png';
 import image from '../assets/header.jpg';
 import SalonInfo from './SalonInfo';
 import Owner from './Owner';
 import OwnerPic from '../assets/owner.jpg';
+import imageOne from '../assets/hairEighteen.jpg';
 
 const Home = () => {
   return (
