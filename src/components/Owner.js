@@ -1,9 +1,6 @@
 import React from 'react'
 import './Owner.css';
 import BannerTitle from './BannerTitle';
-import BannerText from './BannerText';
-import BodyImageText from './BodyImageText';
-import imageBody from '../assets/hairEighteen.jpg'
 
 const Owner = ({image}) => {
   return (
