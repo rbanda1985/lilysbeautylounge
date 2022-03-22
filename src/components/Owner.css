@@ -45,11 +45,11 @@
   }
   .owner-box {
     width: 90%;
-    height: 1000px;
+    height: 600px;
   }
   .owner-summary {
     width: 78%;
-    margin-top: -800px;
+    margin-top: -500px;
     flex-direction: column;
     align-items: center;
     justify-content: center;

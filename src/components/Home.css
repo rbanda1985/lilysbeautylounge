@@ -7,3 +7,64 @@
   width: 100%;
   margin: auto;
 }
+
+.two-images {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+.banner-image {
+  margin-top: 3em;
+  margin-bottom: 3em;
+  height: 50em;
+  overflow: hidden;
+}
+
+.banner-text {
+  background-color: #9575cd;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-text p {
+  font-size: 2em;
+  font-family: "Parisienne", cursive;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .banner-text {
+    background-color: #9575cd;
+    text-align: center;
+  }
+  .banner-text p {
+    font-size: 1.8em;
+    font-family: "Parisienne", cursive;
+    color: white;
+  }
+  .banner-image {
+    height: auto;
+  }
+  .banner-image img {
+    border-top: 1px solid #9575cd;
+    border-bottom: 1px solid #9575cd;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 900px) and (orientation: landscape) {
+  .banner-image {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .banner-image {
+    height: auto;
+  }
+}

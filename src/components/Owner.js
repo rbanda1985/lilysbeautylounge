@@ -18,7 +18,7 @@ const Owner = ({image}) => {
           <img src={image} alt='owner' />
         </div>
         <div className='owner-info'>
-        Welcome! Thank you for considering me as your hair stylist. I have years of experience in the salon industry. I specialize in haircuts, blowouts, color corrections, and most importantly color transformations! If you feel that you're tired of the same look and you're ready for a change, let me help transform you into that beautiful confident charismatic woman that you deserve to feel and look like. Hope to see you in my chair soon!
+        Welcome! Thank you for considering me as your hair stylist. I specialize in haircuts, blowouts, color corrections, and most importantly color transformations! Please navigate through the website to find out more information on policies and how to book an appointment.
         </div>
         </div>
        </div>
