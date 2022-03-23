@@ -22,6 +22,7 @@
   margin-bottom: 3em;
   height: 50em;
   overflow: hidden;
+  position: relative;
 }
 
 .banner-text {
@@ -36,6 +37,33 @@
   font-size: 2em;
   font-family: "Parisienne", cursive;
   color: white;
+}
+
+.image-design-text {
+  position: absolute;
+  top: 8em;
+  right: 15em;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 500px;
+  border: 8px solid white;
+  align-items: center;
+}
+
+.image-design-text h2 {
+  color: white;
+  padding-top: 2em;
+  text-decoration: underline;
+}
+
+.image-design-text p {
+  color: white;
+  font-size: 1.7em;
+  text-align: center;
+  padding-top: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 @media only screen and (max-width: 600px) {
@@ -55,16 +83,61 @@
     border-top: 1px solid #9575cd;
     border-bottom: 1px solid #9575cd;
   }
+  .image-design-text {
+    top: 2em;
+    right: 4em;
+    height: 14.5em;
+    width: 300px;
+    border: 4px double white;
+  }
+  .image-design-text h2 {
+    padding-top: 1em;
+    font-weight: 400;
+  }
+  .image-design-text p {
+    padding-top: 1em;
+    font-size: 1.5em;
+    font-weight: 400;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media (min-width: 480px) and (max-width: 900px) and (orientation: landscape) {
   .banner-image {
     height: auto;
   }
+  .image-design-text {
+    top: 5em;
+    right: 9em;
+    height: 400px;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
   .banner-image {
     height: auto;
+  }
+}
+
+@media (min-width: 662px) and (max-width: 1000px) {
+  .image-design-text {
+    top: 5em;
+    right: 12em;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .image-design-text {
+    top: 1em;
+    right: 2em;
+    height: 13em;
+  }
+}
+
+@media only screen and (max-width: 3000px) {
+  .banner-image img {
+    width: 100vw;
   }
 }

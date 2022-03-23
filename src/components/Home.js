@@ -6,7 +6,7 @@ import image from '../assets/header.jpg';
 import SalonInfo from './SalonInfo';
 import Owner from './Owner';
 import OwnerPic from '../assets/owner.jpg';
-import bannerImage from '../assets/alexander.jpg';
+import bannerImage from '../assets/jenna.jpg';
 
 const Home = () => {
   return (
@@ -19,6 +19,10 @@ const Home = () => {
       </div>
       <div className='banner-image'>
         <img src={bannerImage} className='img-fluid shadow-4' alt='Banner Photo'/>
+        <div className='image-design-text'>
+        <h2>Appointments</h2>
+        <p>Visit the services section below to book an appointement with me.</p>
+        </div>
       </div>
     </>
   )
