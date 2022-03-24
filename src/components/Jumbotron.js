@@ -38,7 +38,7 @@ const Jumbotron = ({image, heading, subHeading, logo}) => {
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href='/contact'><span className='header-link'>Contact</span></MDBNavbarLink>
+              <MDBNavbarLink href='/services'><span className='header-link'>Services</span></MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
               <MDBNavbarLink href='/gallery'><span className='header-link'>Gallery</span></MDBNavbarLink>

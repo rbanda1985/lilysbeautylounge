@@ -4,7 +4,7 @@ import { MDBCard, MDBCardImage, MDBCardBody, MDBCardTitle, MDBCardText, MDBRow, 
 
 const Card = ({card}) => {
   return (
-    <MDBRow className='cols-1 cols-md-2 g-4 card-row'>
+    <MDBRow className='row-cols-1 cols-1 cols-md-2 g-4 card-row'>
       <MDBCol>
         <MDBCard shadow='0' border='secondary' background='white'>
           <MDBCardImage
@@ -13,7 +13,7 @@ const Card = ({card}) => {
             position='top'
           />
           <MDBCardBody className='card-text-style'>
-            <MDBCardTitle>{card.title}</MDBCardTitle>
+            <MDBCardTitle className='card-title'>{card.title}</MDBCardTitle>
             <MDBCardText>
               {card.text}
             </MDBCardText>

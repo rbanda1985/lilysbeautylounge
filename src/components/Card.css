@@ -1,8 +1,14 @@
 .card-row {
-  margin-bottom: 4em;
+  padding-bottom: 4em;
+  margin: auto;
 }
 
 .card-text-style {
   color: #9575cd;
   text-align: center;
+}
+
+.card-title {
+  font-family: "Parisienne", cursive;
+  font-size: 2em;
 }

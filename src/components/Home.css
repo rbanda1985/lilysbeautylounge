@@ -47,7 +47,7 @@
   flex-direction: column;
   height: 500px;
   width: 500px;
-  border: 8px solid white;
+  border: 8px solid #9575cd;
   align-items: center;
 }
 
@@ -55,6 +55,8 @@
   color: white;
   padding-top: 2em;
   text-decoration: underline;
+  font-family: "Parisienne", cursive;
+  font-size: 2.5em;
 }
 
 .image-design-text p {
@@ -68,6 +70,7 @@
 
 .cards {
   margin-top: 6em;
+  display: flex;
 }
 
 @media only screen and (max-width: 600px) {
@@ -92,11 +95,12 @@
     right: 4em;
     height: 14.5em;
     width: 300px;
-    border: 4px double white;
+    border: 4px double #9575cd;
   }
   .image-design-text h2 {
     padding-top: 1em;
     font-weight: 400;
+    font-size: 1.8em;
   }
   .image-design-text p {
     padding-top: 1em;
@@ -104,6 +108,9 @@
     font-weight: 400;
     padding-left: 0;
     padding-right: 0;
+  }
+  .cards {
+    flex-wrap: wrap;
   }
 }
 
@@ -116,11 +123,17 @@
     right: 9em;
     height: 400px;
   }
+  .cards {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
   .banner-image {
     height: auto;
+  }
+  .cards {
+    display: block;
   }
 }
 
