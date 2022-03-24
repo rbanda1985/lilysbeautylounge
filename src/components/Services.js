@@ -1,8 +1,12 @@
 import React from 'react'
+import Jumbotron from './Jumbotron';
+import image from '../assets/shears.jpg';
 
 const Services = () => {
   return (
-    <div>Contact</div>
+    <>
+      <Jumbotron image={image} heading='Services' subHeading='This is where inspiration becomes reality'/>
+    </>
   )
 }
 
