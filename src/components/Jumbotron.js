@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './Jumbotron.css';
+import logo from '../assets/logo.png'
 import {
   MDBNavbar,
   MDBNavbarNav,
@@ -13,7 +14,7 @@ import {
 } from 'mdb-react-ui-kit';
 
 
-const Jumbotron = ({image, heading, subHeading, logo}) => {
+const Jumbotron = ({image, heading, subHeading }) => {
   const [showNavColor, setShowNavColor] = useState(false);
   return (
     <header>
