@@ -5,24 +5,19 @@ import {
   MDBCarouselInner,
   MDBCarouselItem,
   MDBCarouselElement,
+  MDBTabsItem,
 } from 'mdb-react-ui-kit';
+import imageData from '../imageData';
 
-const Carousel = ({imageOne, imageTwo, imageThree, imageFour}) => {
+const Carousel = () => {
   return (
     <MDBCarousel showControls className='carousel'>
     <MDBCarouselInner>
-      <MDBCarouselItem className='active'>
-        <MDBCarouselElement className='carousel-image' src={imageOne} alt='...' />
-      </MDBCarouselItem>
-      <MDBCarouselItem>
-        <MDBCarouselElement className='carousel-image' src={imageTwo} alt='...' />
-      </MDBCarouselItem>
-      <MDBCarouselItem>
-        <MDBCarouselElement className='carousel-image' src={imageThree} alt='...' />
-      </MDBCarouselItem>
-      <MDBCarouselItem>
-        <MDBCarouselElement className='carousel-image' src={imageFour} alt='...' />
-      </MDBCarouselItem>
+      {
+        imageData.map((image, index) => <MDBCarouselItem key={index} className={index === 0 ? 'active' : ''} >
+          <MDBCarouselElement className='carousel-image' src={image.image} alt={image.alt} />
+        </MDBCarouselItem>)
+      }
     </MDBCarouselInner>
   </MDBCarousel>
   )
