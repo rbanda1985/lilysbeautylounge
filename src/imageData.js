@@ -66,6 +66,66 @@ const imageData = [
   {
     image: require('./assets/hairEighteen.jpg'),
     alt: 'Seventeenth Picture'
+  },
+  {
+    image: require('./assets/hairNinteen.jpg'),
+    alt: 'Eighteenth Picture'
+  },
+  {
+    image: require('./assets/hairTwenty.jpg'),
+    alt: 'Twenteenth Picture'
+  },
+  {
+    image: require('./assets/hairTwentyOne.jpg'),
+    alt: 'Twenty First Picture'
+  },
+  {
+    image: require('./assets/hairTwentyTwo.jpg'),
+    alt: 'Twenty Second Picture'
+  },
+  {
+    image: require('./assets/hairTwentyThree.jpg'),
+    alt: 'Twenty Third Picture'
+  },
+  {
+    image: require('./assets/hairTwentyFour.jpg'),
+    alt: 'Twenty Fourth Picture'
+  },
+  {
+    image: require('./assets/hairTwentyFive.jpg'),
+    alt: 'Twenty Fifth Picture'
+  },
+  {
+    image: require('./assets/hairTwentySix.jpg'),
+    alt: 'Twenty Sixth Picture'
+  },
+  {
+    image: require('./assets/hairTwentySeven.jpg'),
+    alt: 'Twenty Seventh Picture'
+  },
+  {
+    image: require('./assets/hairTwentyEight.jpg'),
+    alt: 'Twenty Eighth Picture'
+  },
+  {
+    image: require('./assets/hairTwentyNine.jpg'),
+    alt: 'Twenty Ninth Picture'
+  },
+  {
+    image: require('./assets/hairThirty.jpg'),
+    alt: 'Thirtyeth Picture'
+  },
+  {
+    image: require('./assets/hairThirtyOne.jpg'),
+    alt: 'Thirty First Picture'
+  },
+  {
+    image: require('./assets/hairThirtyTwo.jpg'),
+    alt: 'Thirty Second Picture'
+  },
+  {
+    image: require('./assets/hairThirtyThree.jpg'),
+    alt: 'Thirty Third Picture'
   }
 ]
 

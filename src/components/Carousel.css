@@ -21,6 +21,10 @@
     margin-bottom: 4em;
     margin-top: 2em;
   }
+  .carousel-inner {
+    width: 90%;
+    margin: auto;
+  }
 }
 
 @media (min-width: 480px) and (max-width: 900px) and (orientation: landscape) {

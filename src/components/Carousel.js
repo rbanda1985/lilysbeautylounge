@@ -11,7 +11,7 @@ import imageData from '../imageData';
 
 const Carousel = () => {
   return (
-    <MDBCarousel showControls className='carousel'>
+    <MDBCarousel showControls className='carousel' interval={3000}>
     <MDBCarouselInner>
       {
         imageData.map((image, index) => <MDBCarouselItem key={index} className={index === 0 ? 'active' : ''} >
