@@ -1,0 +1,32 @@
+.service-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80em;
+  margin-bottom: 4em;
+}
+
+form {
+  border: 1px solid purple;
+  padding: 1em;
+}
+
+.form-input {
+  text-align: start;
+  padding: 0.7em;
+}
+
+.form-input label {
+  padding-right: 0.5em;
+}
+
+.btn-style {
+  text-align: center;
+  padding-top: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+  .service-form {
+    height: 30em;
+  }
+}

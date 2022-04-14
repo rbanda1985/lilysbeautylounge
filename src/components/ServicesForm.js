@@ -1,20 +1,32 @@
 import React from 'react'
-import {Fomik, Form, Formik} from 'formik';
+import {Form, Formik} from 'formik';
+import { MDBBtn } from 'mdb-react-ui-kit';
 import * as Yup from 'yup'
 import FormikControl from './FormikControl';
-import emailjs from '@emailjs/browser';
+import axios from 'axios';
 
-const Form = () => {
+
+
+const ServicesForm = () => {
+
+  const baseURL = 'http://localhost:3001/send';
+
   const salonOptions = [
-    {key: 'Yes', value: 'yes'},
-    {key: 'No', value: 'no'}
+    {key: 'Yes', value: 'Yes'},
+    {key: 'No', value: 'No'}
+  ]
+
+  const boxDyeOptions = [
+    {key: 'Yes', value: 'Yes'},
+    {key: 'No', value: 'No'}
   ]
 
   const assistanceOptions = [
-    {key: 'Myself', value: 'myself'},
-    {key: 'With Assistance', value: 'withassistance'}
+    {key: 'Myself', value: 'Myself'},
+    {key: 'With Assistance', value: 'With Assistance'}
   ]
 
+ 
   const initialValues = {
     firstName: '',
     lastName: '',
@@ -39,30 +51,44 @@ const Form = () => {
       then: Yup.string().required('Required'),
     }),
     usedDye: Yup.string().required('Required'),
-    color: Yup.string().required('Required'),
+    color: Yup.string().when('usedDye', {
+      is: 'yes',
+      then: Yup.string().required('Required')
+    }),
     application: Yup.string().required('Required'),
-    lastApplication: Yup.string().when('application', {
+    lastApplication: Yup.string().when('usedDye', {
       is: 'withassistance',
       then: Yup.string().required('Required')
     })
     })
 
-    const onSubmit = values => {
-      const sendEmail = (e) => {
-        e.preventDefault();
-    
-        emailjs.sendForm('service_qutuc5e', 'template_0dl88fe', form.current, '7cUWmZ-GSLAHP1PN8')
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
-      };
-    }
+  const sendEmail = (values) => {
+    console.log(values);
+    const data = {
+      firstName: values.firstName,
+      lastName: values.lastName,
+      email: values.email,
+      phoneNumber: values.phoneNumber,
+      salonCare: values.salonCare,
+      salonLast: values.salonLast,
+      usedDye: values.usedDye,
+      color: values.color,
+      application: values.application,
+      lastApplication: values.lastApplication
+    };
+    axios.post(baseURL, data, {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+    .then(res => console.log(res))
+    .catch(err => console.log(err));
+  };
 
+  
 
   return (
-    <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={onSubmit}>
+    <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={sendEmail} >
       {
         formik => {
           return <Form>
@@ -86,15 +112,15 @@ const Form = () => {
                 />
                <FormikControl 
                 control='input'
-                type='number'
+                type='text'
                 label='Phone Number'
                 name='phoneNumber'
                 />
                 <FormikControl
                  control='radio'
-                 type='radio'
                  label='Within the last 5 years has a professional salon coloured your hair?'
                  name='salonCare'
+                 options={salonOptions}
                  />
                  <FormikControl
                   control='input'
@@ -104,9 +130,9 @@ const Form = () => {
                   />
                   <FormikControl
                    control='radio'
-                   type='radio'
                    label='Have you box dyed your hair?'
                    name='usedDye'
+                   options={boxDyeOptions}
                    />
                    <FormikControl
                     control='input'
@@ -115,7 +141,23 @@ const Form = () => {
                     name='color'
                     />
                    <FormikControl
-                    control=''
+                    control='radio'
+                    label='Did you apply the color yourself or with the assistance of someone else?'
+                    name='application'
+                    options={assistanceOptions}
+                    />
+                    <FormikControl
+                     control='input'
+                     label='When was the last application?'
+                     name='lastApplication'
+                     />
+<div style={{textAlign: 'center', marginTop: '1em'}}>
+<label htmlFor="formFileMultiple" className="form-label">Please upload pictures of the front, back, and the sides of your hair.</label>
+<input className="form-control" type="file" id="formFileMultiple" name='image' multiple />
+</div>
+                    <div className='btn-style'>
+                    <MDBBtn type='submit'>Submit</MDBBtn>
+                    </div>
           </Form>
         }
       }
@@ -123,4 +165,4 @@ const Form = () => {
   )
 }
 
-export default Form
+export default ServicesForm
