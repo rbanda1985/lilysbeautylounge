@@ -30,3 +30,9 @@ form {
     height: 30em;
   }
 }
+
+@media (min-width: 480px) and (max-width: 900px) and (orientation: landscape) {
+  .service-form {
+    height: 45em;
+  }
+}
