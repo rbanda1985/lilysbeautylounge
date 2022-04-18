@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80em;
+  height: 65em;
   margin-bottom: 4em;
 }
 
@@ -31,6 +31,11 @@ form {
   width: 100%;
   margin: auto;
   color: rgb(149, 117, 205);
+}
+
+.service-disclaimer {
+  width: 80%;
+  margin: auto;
 }
 
 .service-disclaimer-two {

@@ -11,7 +11,8 @@ const cardData = [
     image: require('./assets/gallery-main.jpg'),
     text: 'Find your inspiration in here',
     button: 'Inspiration',
-    link: '/gallery'
+    link: '/gallery',
+    className: 'gallery-main'
   }
 ]
 

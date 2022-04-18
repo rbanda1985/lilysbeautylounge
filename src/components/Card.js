@@ -11,6 +11,7 @@ const Card = ({card}) => {
             src={card.image}
             alt='...'
             position='top'
+            className={card.className}
           />
           <MDBCardBody className='card-text-style'>
             <MDBCardTitle className='card-title'>{card.title}</MDBCardTitle>

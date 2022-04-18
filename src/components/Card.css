@@ -19,6 +19,10 @@
   height: auto;
 }
 
+.gallery-main {
+  height: 22.5em;
+}
+
 @media only screen and (max-width: 600px) {
   .card-row {
     height: auto;
