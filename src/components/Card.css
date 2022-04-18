@@ -1,6 +1,8 @@
 .card-row {
   padding-bottom: 4em;
   margin: auto;
+  height: auto;
+  width: 50%;
 }
 
 .card-text-style {
@@ -11,4 +13,18 @@
 .card-title {
   font-family: "Parisienne", cursive;
   font-size: 2em;
+}
+
+.card-img-top {
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-row {
+    height: auto;
+    width: 100%;
+  }
+  .card-img-top {
+    height: auto;
+  }
 }

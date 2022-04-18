@@ -1,6 +1,6 @@
 import React from 'react'
 import Jumbotron from './Jumbotron';
-import image from '../assets/tamara.jpg';
+import image from '../assets/gallery-banner.jpg';
 import Carousel from './Carousel';
 
 const Gallery = () => {

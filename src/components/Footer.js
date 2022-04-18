@@ -38,7 +38,11 @@ const Footer = () => {
               </p>
               <p>
                 <i className='fas fa-envelope me-3'></i>
-                alcauter_17@yahoo.com
+                lilysbeautylounge@gmail.com
+              </p>
+              <p>
+                <i className='fas fa-phone me-3'></i>
+                254-300-1945
               </p>
             </div>
           </div>

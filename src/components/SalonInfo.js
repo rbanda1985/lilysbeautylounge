@@ -26,7 +26,7 @@ const SalonInfo = () => {
           My Mission
         </div>
         <div className='description'>
-          Providing a luxurious and professional experience at an exceptional price
+          Providing a luxurious and professional experience tailored for YOU!
         </div>
         </div>
         <div className='style'>

@@ -6,7 +6,7 @@ import image from '../assets/header.jpg';
 import SalonInfo from './SalonInfo';
 import Owner from './Owner';
 import OwnerPic from '../assets/owner.jpg';
-import bannerImage from '../assets/jenna.jpg';
+import bannerImage from '../assets/appointments.jpg';
 import Card from './Card';
 import cardData from '../data';
 

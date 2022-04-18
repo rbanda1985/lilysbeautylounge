@@ -25,9 +25,32 @@ form {
   padding-top: 1em;
 }
 
+.service-disclaimer-container {
+  margin-bottom: 3em;
+  text-align: start;
+  width: 100%;
+  margin: auto;
+  color: rgb(149, 117, 205);
+}
+
+.service-disclaimer-two {
+  text-align: center;
+}
+
 @media only screen and (max-width: 600px) {
   .service-form {
     height: 30em;
+  }
+  .service-disclaimer {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+  .service-disclaimer-two {
+    text-align: center;
+  }
+  .service-disclaimer-container {
+    margin-bottom: 3em;
   }
 }
 

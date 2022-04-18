@@ -53,7 +53,7 @@ const Jumbotron = ({image, heading, subHeading }) => {
         className='p-5 text-center bg-image header-image'
         style={{ backgroundImage: `url(${image})` }}
       >
-        <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
+        <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.4)' }}>
           <div className='d-flex justify-content-center align-items-center h-100'>
             <div className='text-white image-text'>
               <h1 className='mb-3 headingOne'>{heading}</h1>
