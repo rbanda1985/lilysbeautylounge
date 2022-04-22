@@ -126,6 +126,22 @@ const imageData = [
   {
     image: require('./assets/hairThirtyThree.jpg'),
     alt: 'Thirty Third Picture'
+  },
+  {
+    image: require('./assets/hairThirtyFour.jpg'),
+    alt: 'Thiry Fourth Picture'
+  },
+  {
+    image: require('./assets/hairThirtyFive.jpg'),
+    alt: 'Thirty Fifth Picture'
+  },
+  {
+    image: require('./assets/hairThirtySix.jpg'),
+    alt: 'Thirty Sixth Picture'
+  },
+  {
+    image: require('./assets/hairThirtySeven.jpg'),
+    alt: 'Thirty Seventh Picture'
   }
 ]
 
